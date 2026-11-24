@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Market Pulse: US market quotes and news pulled by a scheduled API pipeline, with a daily webhook brief.">
+<meta property="og:title" content="Market Pulse">
+<meta property="og:description" content="Market Pulse: US market quotes and news pulled by a scheduled API pipeline, with a daily webhook brief.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%237b93ff'/%3E%3Cstop offset='1' stop-color='%23ff8a65'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x='6' y='6' width='20' height='20' rx='4' transform='rotate(45 16 16)' fill='url(%23g)'/%3E%3C/svg%3E">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)} body{margin:0} img{max-width:100%} [hidden]{display:none!important}</style>
+<title>Market Pulse</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: dark trading-desk page. Index strip with sparklines, daily brief, sector heat grid, watchlist, news feed, and the pipeline that produces it all. */
+:root{
+  --bg:#070b16; --surface:#0f1526; --surface2:#151d33; --line:#222c48;
+  --fg:#eef1ff; --muted:#97a1c4; --accent:#7b93ff; --accent2:#ffcc66;
+  --up:#2fd38a; --down:#ff5f6d; --flat:#8b93b0;
+  --display:"Syne", "Manrope", system-ui, sans-serif;
+  --body:"Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono:"JetBrains Mono", ui-monospace, Menlo, monospace;
+  color-scheme:dark;
+}
+@media (prefers-color-scheme: light){:root:not([data-theme="dark"]){
+  --bg:#f3f5fb; --surface:#ffffff; --surface2:#eef1fa; --line:#d8deef;
+  --fg:#0d1330; --muted:#556084; --accent:#3552d8; --accent2:#a8740a;
+  --up:#0f8f58; --down:#d1323f; --flat:#6b7392; color-scheme:light}}
+:root[data-theme="light"]{
+  --bg:#f3f5fb; --surface:#ffffff; --surface2:#eef1fa; --line:#d8deef;
+  --fg:#0d1330; --muted:#556084; --accent:#3552d8; --accent2:#a8740a;
+  --up:#0f8f58; --down:#d1323f; --flat:#6b7392; color-scheme:light}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:16px;line-height:1.55;
+  padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px))}
+.wrap{max-width:1160px;margin:0 auto;padding-block:20px 60px}
+h1,h2,h3{font-family:var(--display);margin:0;line-height:1.05;letter-spacing:-.01em;text-wrap:balance}
+p{margin:0}
+a{color:var(--accent)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.eyebrow{font-family:var(--mono);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.num{font-variant-numeric:tabular-nums}
+.up{color:var(--up)} .down{color:var(--down)} .flat{color:var(--flat)}
+
+.top{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:26px}
+.top a{color:var(--muted);text-decoration:none;font-weight:700;font-size:.9rem}
+.live{display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:.76rem;color:var(--muted);padding:6px 12px;border-radius:999px;border:1px solid var(--line);background:var(--surface)}
+.live i{width:8px;height:8px;border-radius:50%;background:var(--up)}
+.badge{font-family:var(--mono);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;padding:3px 8px;border-radius:999px;background:color-mix(in srgb,var(--accent2) 22%,transparent);color:var(--accent2)}
+
+.hero{display:grid;grid-template-columns:1fr auto;gap:20px;align-items:end;margin-bottom:22px}
+.hero h1{font-size:clamp(2.4rem,6vw,4.4rem);font-weight:800}
+.hero h1 .chg{display:block}
+.hero p{color:var(--muted);margin-top:10px;max-width:60ch}
+
+.idx{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.ic{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:16px;display:grid;gap:4px;min-width:0;position:relative;overflow:hidden}
+.ic .sym{font-family:var(--mono);font-size:.76rem;color:var(--muted)}
+.ic b{font-family:var(--display);font-size:1.15rem}
+.ic .px{font-family:var(--mono);font-size:1.25rem;font-variant-numeric:tabular-nums}
+.ic .pc{font-family:var(--mono);font-weight:500;font-size:.9rem}
+.ic svg{width:100%;height:54px;display:block;margin-top:6px}
+
+.grid{display:grid;grid-template-columns:1.1fr 1fr;gap:16px;margin-top:16px}
+.grid > *{min-width:0}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:20px;min-width:0}
+.card h2{font-size:1.25rem;margin-bottom:14px;display:flex;justify-content:space-between;gap:10px;align-items:baseline;flex-wrap:wrap}
+.card h2 small{font-family:var(--mono);font-weight:400;font-size:.72rem;color:var(--muted)}
+.span2{grid-column:1 / -1}
+
+.brief{background:linear-gradient(140deg,color-mix(in srgb,var(--accent) 22%,var(--surface)),var(--surface) 65%)}
+.brief p.txt{font-size:1.05rem;line-height:1.65}
+.brief .ai{margin-top:14px;padding-top:14px;border-top:1px solid var(--line);white-space:pre-line;color:var(--fg)}
+.sent{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+.sent span{font-family:var(--mono);font-size:.72rem;padding:4px 10px;border-radius:999px;border:1px solid var(--line);color:var(--muted)}
+.sent span.on{border-color:var(--up);color:var(--up)}
+
+.heat{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.tile{border-radius:12px;padding:12px;min-height:84px;display:grid;align-content:space-between;color:#fff;min-width:0}
+.tile b{font-size:.86rem;line-height:1.2;overflow-wrap:anywhere;hyphens:auto}
+.tile span{font-family:var(--mono);font-size:1.05rem;font-weight:500}
+.tile small{font-family:var(--mono);font-size:.68rem;opacity:.8}
+
+.wl{width:100%;border-collapse:collapse;font-size:.92rem}
+.wl td{padding:9px 6px;border-bottom:1px solid var(--line)}
+.wl td.r{text-align:right;font-family:var(--mono);font-variant-numeric:tabular-nums}
+.wl .barc{width:40%}
+.wl .bar{position:relative;height:8px;background:var(--surface2);border-radius:4px}
+.wl .bar i{position:absolute;top:0;height:100%;border-radius:4px}
+.wl .bar::after{content:"";position:absolute;left:50%;top:-3px;bottom:-3px;width:1px;background:var(--muted);opacity:.5}
+
+.filters{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
+.filters button{font-family:var(--body);font-weight:700;font-size:.8rem;padding:5px 11px;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--muted);cursor:pointer}
+.filters button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
+.news{list-style:none;margin:0;padding:0;display:grid}
+.news li{display:grid;grid-template-columns:6px 1fr;gap:12px;padding:12px 0;border-bottom:1px solid var(--line)}
+.news li:last-child{border-bottom:none}
+.news .tone{border-radius:3px}
+.news a,.news .h{font-weight:700;color:var(--fg);text-decoration:none;line-height:1.35}
+.news a:hover{color:var(--accent)}
+.news .meta{display:flex;gap:8px;flex-wrap:wrap;margin-top:6px;font-size:.78rem;color:var(--muted);align-items:center}
+.news .tag{font-family:var(--mono);font-size:.68rem;padding:2px 8px;border-radius:999px;background:var(--surface2)}
+
+.pipe{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;align-items:stretch;position:relative}
+.node{background:var(--surface2);border:1px solid var(--line);border-radius:16px;padding:14px;display:grid;gap:6px;align-content:start;position:relative}
+.node .n{font-family:var(--mono);font-size:.7rem;color:var(--accent)}
+.node b{font-size:1rem}
+.node span{font-size:.84rem;color:var(--muted)}
+.node + .node::before{content:"→";position:absolute;left:-12px;top:50%;transform:translate(-50%,-50%);color:var(--accent);font-weight:800;z-index:1}
+.code{margin-top:14px;font-family:var(--mono);font-size:.78rem;background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:12px 14px;overflow-x:auto;white-space:pre;color:var(--muted)}
+.foot{margin-top:24px;font-size:.8rem;color:var(--muted)}
+
+@media (max-width:900px){
+  .grid{grid-template-columns:1fr} .idx{grid-template-columns:1fr 1fr} .heat{grid-template-columns:repeat(3,1fr)}
+  .pipe{grid-template-columns:1fr} .node + .node::before{content:"↓";left:50%;top:-6px}
+  .hero{grid-template-columns:1fr}
+}
+@media (max-width:480px){ .heat{grid-template-columns:1fr 1fr} .wl .barc{display:none} }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <a href="../">← Evan Lambert</a>
+    <span class="live"><i></i><span id="updated">Loading...</span> <span class="badge" id="sample" hidden>Sample data</span></span>
+  </div>
+
+  <section class="hero">
+    <div>
+      <p class="eyebrow">Build 02 · APIs and webhooks</p>
+      <h1>Market Pulse <span class="chg num" id="headline">-</span></h1>
+      <p>A scheduled job pulls US market quotes and news from the Finnhub API after every close, tags the headlines, refreshes this page, and posts a brief to Discord or Slack through a webhook. No servers to run.</p>
+    </div>
+  </section>
+
+  <div class="idx" id="indices"></div>
+
+  <div class="grid">
+    <div class="card brief"><h2>Today's brief <small>also sent by webhook</small></h2><p class="txt" id="brief">-</p><div class="ai" id="ai" hidden></div><div class="sent" id="sent"></div></div>
+    <div class="card"><h2>Sectors <small>S&P sector ETFs</small></h2><div class="heat" id="sectors"></div></div>
+    <div class="card"><h2>Watchlist <small>sorted by move</small></h2><table class="wl" id="watch"></table></div>
+    <div class="card"><h2>Headlines <small id="news-count"></small></h2><div class="filters" id="topics"></div><ul class="news" id="news"></ul></div>
+    <div class="card span2">
+      <h2>How it works <small>GitHub Actions + Finnhub + webhooks</small></h2>
+      <div class="pipe">
+        <div class="node"><span class="n">01 · Schedule</span><b>GitHub Actions</b><span>Runs every weekday after the 4 pm close, or on demand.</span></div>
+        <div class="node"><span class="n">02 · API</span><b>Finnhub REST API</b><span>About 25 quote calls plus the general news feed.</span></div>
+        <div class="node"><span class="n">03 · Transform</span><b>Python</b><span>Cleans the data, tags headline tone and topics, writes the brief.</span></div>
+        <div class="node"><span class="n">04 · Publish</span><b>This page</b><span>New JSON is committed and GitHub Pages rebuilds.</span></div>
+        <div class="node"><span class="n">05 · Notify</span><b>Webhooks</b><span>Posts the brief to Discord and Slack channels.</span></div>
+      </div>
+      <div class="code">curl -X POST -H "Authorization: Bearer &lt;token&gt;" \
+  https://api.github.com/repos/&lt;owner&gt;/&lt;repo&gt;/dispatches \
+  -d '{"event_type":"market-brief"}'      # trigger a fresh brief from any app</div>
+    </div>
+  </div>
+  <p class="foot">Data from Finnhub. Headline tone is a simple keyword rule, not a model. For information only, not investment advice.</p>
+</div>
+
+<script>
+(function(){
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const cls = v => v > 0.005 ? "up" : v < -0.005 ? "down" : "flat";
+const pct = v => (v > 0 ? "+" : "") + v.toFixed(2) + "%";
+const money = v => v.toLocaleString("en-US", {minimumFractionDigits:2, maximumFractionDigits:2});
+let topic = "All";
+
+async function getJSON(path){ const r = await fetch(path + "?v=" + Date.now(), {cache:"no-store"}); if (!r.ok) throw new Error(path + " " + r.status); return r.json(); }
+
+function spark(hist, sym, up){
+  const pts = hist.map(h => h[sym]).filter(v => typeof v === "number");
+  if (pts.length < 2) return "";
+  const W = 200, H = 54, mn = Math.min(...pts), mx = Math.max(...pts), rg = mx - mn || 1;
+  const xy = pts.map((v,i) => [i*(W/(pts.length-1)), H - 4 - (v-mn)/rg*(H-10)]);
+  const d = xy.map((p,i) => (i ? "L" : "M") + p[0].toFixed(1) + " " + p[1].toFixed(1)).join(" ");
+  const col = up ? "var(--up)" : "var(--down)", id = "g" + sym;
+  const last = xy[xy.length-1];
+  return `<svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" aria-hidden="true"><defs><linearGradient id="${id}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${col}" stop-opacity=".35"/><stop offset="1" stop-color="${col}" stop-opacity="0"/></linearGradient></defs>
+    <path d="${d} L${W} ${H} L0 ${H}Z" fill="url(#${id})"/><path d="${d}" fill="none" stroke="${col}" stroke-width="2" vector-effect="non-scaling-stroke"/><circle cx="${last[0]-2}" cy="${last[1]}" r="3" fill="${col}"/></svg>`;
+}
+
+function render(d, hist){
+  const t = new Date(d.generated_at);
+  $("updated").textContent = "Updated " + t.toLocaleString("en-US", {timeZone:"America/New_York", month:"short", day:"numeric", hour:"numeric", minute:"2-digit"}) + " ET";
+  $("sample").hidden = !d.sample;
+  const spy = d.indices.find(i => i.symbol === "SPY") || d.indices[0];
+  if (spy){ $("headline").innerHTML = `<span class="${cls(spy.pct)}">S&amp;P 500 ${pct(spy.pct)}</span>`; }
+
+  $("indices").innerHTML = d.indices.map(i => `<div class="ic"><span class="sym">${esc(i.symbol)}</span><b>${esc(i.name)}</b>
+    <span class="px">${money(i.price)}</span><span class="pc ${cls(i.pct)}">${i.change > 0 ? "+" : ""}${money(i.change)} (${pct(i.pct)})</span>${spark(hist, i.symbol, i.pct >= 0)}</div>`).join("");
+
+  $("brief").textContent = d.brief || "";
+  if (d.ai_summary){ $("ai").hidden = false; $("ai").textContent = "Claude summary\n" + d.ai_summary; }
+  const sent = d.webhooks_sent || [];
+  $("sent").innerHTML = ["discord","slack"].map(w => `<span class="${sent.includes(w) ? "on" : ""}">${w === "discord" ? "Discord" : "Slack"} ${sent.includes(w) ? "✓ sent" : "· not set up"}</span>`).join("");
+
+  const mxs = Math.max(1, ...d.sectors.map(s => Math.abs(s.pct)));
+  $("sectors").innerHTML = [...d.sectors].sort((a,b)=>b.pct-a.pct).map(s => { const a = Math.min(1, Math.abs(s.pct)/mxs);
+    const base = s.pct >= 0 ? "#1a9e63" : "#d13a48";
+    return `<div class="tile" style="background:color-mix(in srgb, ${base} ${Math.round(30 + a*70)}%, #1b2238)"><b>${esc(s.name)}</b><div><span>${pct(s.pct)}</span><br><small>${esc(s.symbol)}</small></div></div>`; }).join("");
+
+  const w = [...d.watchlist].sort((a,b)=>b.pct-a.pct), mw = Math.max(1, ...w.map(x => Math.abs(x.pct)));
+  $("watch").innerHTML = w.map(x => { const width = Math.abs(x.pct)/mw*50;
+    return `<tr><td><b>${esc(x.symbol)}</b></td><td class="r">${money(x.price)}</td><td class="barc"><div class="bar"><i style="${x.pct >= 0 ? `left:50%;width:${width}%;background:var(--up)` : `right:50%;width:${width}%;background:var(--down)`}"></i></div></td><td class="r ${cls(x.pct)}">${pct(x.pct)}</td></tr>`; }).join("");
+
+  const topics = ["All", ...new Set(d.news.flatMap(n => n.topics || []))];
+  $("topics").innerHTML = topics.map(tp => `<button type="button" aria-pressed="${tp===topic}" data-t="${esc(tp)}">${esc(tp)}</button>`).join("");
+  $("topics").querySelectorAll("button").forEach(b => b.addEventListener("click", () => { topic = b.dataset.t; render(d, hist); }));
+  const items = d.news.filter(n => topic === "All" || (n.topics || []).includes(topic)).slice(0, 12);
+  $("news-count").textContent = items.length + " shown";
+  $("news").innerHTML = items.map(n => { const col = n.tone === "positive" ? "var(--up)" : n.tone === "negative" ? "var(--down)" : "var(--line)";
+    const ago = Math.max(1, Math.round((t - new Date(n.time))/60000)); const when = ago < 60 ? ago + "m ago" : ago < 1440 ? Math.round(ago/60) + "h ago" : Math.round(ago/1440) + "d ago";
+    const head = n.url ? `<a href="${esc(n.url)}" target="_blank" rel="noopener">${esc(n.headline)}</a>` : `<span class="h">${esc(n.headline)}</span>`;
+    return `<li><span class="tone" style="background:${col}" title="${esc(n.tone)}"></span><div>${head}<div class="meta"><span>${esc(n.source)}</span><span>${when}</span>${(n.topics||[]).map(x => `<span class="tag">${esc(x)}</span>`).join("")}${(n.related||[]).slice(0,3).map(x => `<span class="tag">${esc(x)}</span>`).join("")}</div></div></li>`; }).join("");
+}
+
+Promise.all([getJSON("data/market.json"), getJSON("data/history.json").catch(() => [])])
+  .then(([d, h]) => render(d, h))
+  .catch(() => { $("updated").textContent = "Data not loaded yet. Run the workflow once from the Actions tab."; });
+})();
+</script>
+</body>
+</html>
