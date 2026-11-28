@@ -4,381 +4,354 @@
   {
    "symbol": "SPY",
    "name": "S&P 500",
-   "price": 716.7,
-   "change": -2.08,
-   "pct": -0.29,
-   "open": 703.2,
-   "high": 718.43,
-   "low": 695.45,
-   "prev_close": 718.78
+   "price": 728.32,
+   "change": 11.62,
+   "pct": 1.62,
+   "open": 725.86,
+   "high": 729.15,
+   "low": 719.61,
+   "prev_close": 716.7
   },
   {
    "symbol": "QQQ",
    "name": "Nasdaq 100",
-   "price": 633.93,
-   "change": -4.17,
-   "pct": -0.65,
-   "open": 617.1,
-   "high": 634.89,
-   "low": 607.74,
-   "prev_close": 638.1
+   "price": 650.99,
+   "change": 17.06,
+   "pct": 2.69,
+   "open": 645.72,
+   "high": 651.34,
+   "low": 636.72,
+   "prev_close": 633.93
   },
   {
    "symbol": "DIA",
    "name": "Dow 30",
-   "price": 501.27,
-   "change": 1.53,
-   "pct": 0.31,
-   "open": 492.15,
-   "high": 503.39,
-   "low": 488.62,
-   "prev_close": 499.74
+   "price": 507.6,
+   "change": 6.33,
+   "pct": 1.26,
+   "open": 506.75,
+   "high": 507.81,
+   "low": 503.44,
+   "prev_close": 501.27
   },
   {
    "symbol": "IWM",
    "name": "Russell 2000",
-   "price": 268.87,
-   "change": 1.73,
-   "pct": 0.65,
-   "open": 263.23,
-   "high": 269.77,
-   "low": 260.84,
-   "prev_close": 267.14
+   "price": 273.79,
+   "change": 4.92,
+   "pct": 1.83,
+   "open": 271.82,
+   "high": 273.94,
+   "low": 270.68,
+   "prev_close": 268.87
   }
  ],
  "sectors": [
   {
    "symbol": "XLK",
    "name": "Technology",
-   "price": 155.79,
-   "change": -1.3,
-   "pct": -0.83,
-   "open": 150.86,
-   "high": 155.975,
-   "low": 148.39,
-   "prev_close": 157.09
+   "price": 160.15,
+   "change": 4.36,
+   "pct": 2.8,
+   "open": 159.01,
+   "high": 160.31,
+   "low": 156.18,
+   "prev_close": 155.79
   },
   {
    "symbol": "XLC",
    "name": "Communication",
-   "price": 105.38,
-   "change": 0.93,
-   "pct": 0.89,
-   "open": 102.504,
-   "high": 105.675,
-   "low": 101.405,
-   "prev_close": 104.45
+   "price": 107.48,
+   "change": 2.1,
+   "pct": 1.99,
+   "open": 107.03,
+   "high": 107.62,
+   "low": 106.48,
+   "prev_close": 105.38
   },
   {
    "symbol": "XLY",
    "name": "Consumer Disc.",
-   "price": 117.49,
-   "change": -0.23,
-   "pct": -0.2,
-   "open": 115.86,
-   "high": 118.27,
-   "low": 113.845,
-   "prev_close": 117.72
+   "price": 119.97,
+   "change": 2.48,
+   "pct": 2.11,
+   "open": 118.92,
+   "high": 120.05,
+   "low": 118.385,
+   "prev_close": 117.49
   },
   {
    "symbol": "XLF",
    "name": "Financials",
-   "price": 56.51,
-   "change": 0.4,
-   "pct": 0.71,
-   "open": 55.5,
-   "high": 56.705,
-   "low": 55.33,
-   "prev_close": 56.11
+   "price": 57.16,
+   "change": 0.65,
+   "pct": 1.15,
+   "open": 56.99,
+   "high": 57.335,
+   "low": 56.89,
+   "prev_close": 56.51
   },
   {
    "symbol": "XLV",
    "name": "Health Care",
-   "price": 183.68,
-   "change": -1.04,
-   "pct": -0.56,
-   "open": 184.26,
-   "high": 185.26,
-   "low": 181.69,
-   "prev_close": 184.72
+   "price": 184.2,
+   "change": 0.52,
+   "pct": 0.28,
+   "open": 183.24,
+   "high": 184.41,
+   "low": 182.75,
+   "prev_close": 183.68
   },
   {
    "symbol": "XLI",
    "name": "Industrials",
-   "price": 162.95,
-   "change": 1.34,
-   "pct": 0.83,
-   "open": 158.43,
-   "high": 163.46,
-   "low": 157.405,
-   "prev_close": 161.61
+   "price": 165.56,
+   "change": 2.61,
+   "pct": 1.6,
+   "open": 165.23,
+   "high": 165.689,
+   "low": 164.12,
+   "prev_close": 162.95
   },
   {
    "symbol": "XLE",
    "name": "Energy",
-   "price": 60.9,
-   "change": 0.45,
-   "pct": 0.74,
-   "open": 59.98,
-   "high": 61.285,
-   "low": 59.63,
-   "prev_close": 60.45
+   "price": 61.67,
+   "change": 0.77,
+   "pct": 1.26,
+   "open": 61.58,
+   "high": 62.07,
+   "low": 61.5488,
+   "prev_close": 60.9
   },
   {
    "symbol": "XLP",
    "name": "Consumer Staples",
-   "price": 92.3,
-   "change": 0.42,
-   "pct": 0.46,
-   "open": 92.18,
-   "high": 92.87,
-   "low": 91.855,
-   "prev_close": 91.88
+   "price": 92.68,
+   "change": 0.38,
+   "pct": 0.41,
+   "open": 92.01,
+   "high": 92.74,
+   "low": 91.95,
+   "prev_close": 92.3
   },
   {
    "symbol": "XLU",
    "name": "Utilities",
-   "price": 43.61,
-   "change": 0.21,
-   "pct": 0.48,
-   "open": 43.3,
-   "high": 43.7851,
-   "low": 43.28,
-   "prev_close": 43.4
+   "price": 43.73,
+   "change": 0.12,
+   "pct": 0.28,
+   "open": 43.7,
+   "high": 43.775,
+   "low": 43.57,
+   "prev_close": 43.61
   },
   {
    "symbol": "XLB",
    "name": "Materials",
-   "price": 51.21,
-   "change": 1.04,
-   "pct": 2.07,
-   "open": 49.73,
-   "high": 51.465,
-   "low": 49.475,
-   "prev_close": 50.17
+   "price": 52.15,
+   "change": 0.94,
+   "pct": 1.84,
+   "open": 51.75,
+   "high": 52.19,
+   "low": 51.57,
+   "prev_close": 51.21
   },
   {
    "symbol": "XLRE",
    "name": "Real Estate",
-   "price": 43.86,
-   "change": 0.4,
-   "pct": 0.92,
-   "open": 43.5,
-   "high": 44.16,
-   "low": 43.23,
-   "prev_close": 43.46
+   "price": 44.14,
+   "change": 0.28,
+   "pct": 0.64,
+   "open": 44.015,
+   "high": 44.17,
+   "low": 43.945,
+   "prev_close": 43.86
   }
  ],
  "watchlist": [
   {
    "symbol": "AAPL",
    "name": "AAPL",
-   "price": 355.58,
-   "change": 1.51,
-   "pct": 0.43,
-   "open": 353.475,
-   "high": 356.75,
-   "low": 345.13,
-   "prev_close": 354.07
+   "price": 358.54,
+   "change": 2.96,
+   "pct": 0.83,
+   "open": 358.21,
+   "high": 359.5,
+   "low": 355.64,
+   "prev_close": 355.58
   },
   {
    "symbol": "MSFT",
    "name": "MSFT",
-   "price": 489.93,
-   "change": -6.2,
-   "pct": -1.25,
-   "open": 485.23,
-   "high": 493.437,
-   "low": 477.39,
-   "prev_close": 496.13
+   "price": 492.85,
+   "change": 2.92,
+   "pct": 0.6,
+   "open": 499.755,
+   "high": 500.465,
+   "low": 488.83,
+   "prev_close": 489.93
   },
   {
    "symbol": "NVDA",
    "name": "NVDA",
-   "price": 149.3,
-   "change": -6.08,
-   "pct": -3.91,
-   "open": 144.06,
-   "high": 150.37,
-   "low": 141.17,
-   "prev_close": 155.38
+   "price": 150.49,
+   "change": 1.19,
+   "pct": 0.8,
+   "open": 151.895,
+   "high": 151.98,
+   "low": 145.39,
+   "prev_close": 149.3
   },
   {
    "symbol": "AMZN",
    "name": "AMZN",
-   "price": 244.43,
-   "change": -7.86,
-   "pct": -3.12,
-   "open": 243.125,
-   "high": 246.56,
-   "low": 235.96,
-   "prev_close": 252.29
+   "price": 254.12,
+   "change": 9.69,
+   "pct": 3.96,
+   "open": 250.45,
+   "high": 255.275,
+   "low": 248.45,
+   "prev_close": 244.43
   },
   {
    "symbol": "GOOGL",
    "name": "GOOGL",
-   "price": 273.1,
-   "change": -5.95,
-   "pct": -2.13,
-   "open": 265.1,
-   "high": 273.62,
-   "low": 262.73,
-   "prev_close": 279.05
+   "price": 274.96,
+   "change": 1.86,
+   "pct": 0.68,
+   "open": 279.135,
+   "high": 279.58,
+   "low": 270.03,
+   "prev_close": 273.1
   },
   {
    "symbol": "META",
    "name": "META",
-   "price": 609.89,
-   "change": 20.07,
-   "pct": 3.4,
-   "open": 575.34,
-   "high": 611.055,
-   "low": 567.75,
-   "prev_close": 589.82
+   "price": 628.96,
+   "change": 19.07,
+   "pct": 3.13,
+   "open": 628.39,
+   "high": 636.62,
+   "low": 620.8,
+   "prev_close": 609.89
   },
   {
    "symbol": "TSLA",
    "name": "TSLA",
-   "price": 380.14,
-   "change": -4.54,
-   "pct": -1.18,
-   "open": 370.515,
-   "high": 383.7299,
-   "low": 357.64,
-   "prev_close": 384.68
+   "price": 400,
+   "change": 19.86,
+   "pct": 5.22,
+   "open": 391.34,
+   "high": 401.18,
+   "low": 384.66,
+   "prev_close": 380.14
   },
   {
    "symbol": "JPM",
    "name": "JPM",
-   "price": 316.74,
-   "change": -0.36,
-   "pct": -0.11,
-   "open": 310.56,
-   "high": 318.41,
-   "low": 309.49,
-   "prev_close": 317.1
+   "price": 322.96,
+   "change": 6.22,
+   "pct": 1.96,
+   "open": 321.945,
+   "high": 324.9899,
+   "low": 321.3708,
+   "prev_close": 316.74
   },
   {
    "symbol": "WMT",
    "name": "WMT",
-   "price": 131.94,
-   "change": -0.37,
-   "pct": -0.28,
-   "open": 132.52,
-   "high": 133.1899,
-   "low": 131.2148,
-   "prev_close": 132.31
+   "price": 133.13,
+   "change": 1.19,
+   "pct": 0.9,
+   "open": 131.875,
+   "high": 133.16,
+   "low": 131.685,
+   "prev_close": 131.94
   },
   {
    "symbol": "UPS",
    "name": "UPS",
-   "price": 111.47,
-   "change": 0.64,
-   "pct": 0.58,
-   "open": 110.35,
-   "high": 112.19,
-   "low": 109.98,
-   "prev_close": 110.83
+   "price": 112.63,
+   "change": 1.16,
+   "pct": 1.04,
+   "open": 112.275,
+   "high": 112.79,
+   "low": 111.58,
+   "prev_close": 111.47
   }
  ],
  "news": [
   {
-   "headline": "Brent trades near month's high as Mideast conflict threatens supply - Reuters",
+   "headline": "Son of Hamas chief survives Israeli strike, Hamas says - Reuters",
    "source": "Reuters",
-   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPTzVQVzE5aGdzbGVhNEUtVl94M0V3RjN5Rks4UDU0U0plazFDcjFnUTBMMHBvdk9BRzFaVHljSXk1ZFdzSjlRTVRXNGZ0cnRyUWRRbFJaRjBsVWNFbDZqSnQ0cHo0TW5fRDlwMWlKWDI3V2ROcnlXczVET1RqSXR6UGtZSTZ0OTQtY1YwaG1yYTRwQnZ6TW43azNGNTFqMmpkNFhtbVJwRnVkVERhR1NnSlFIMzExZw?oc=5",
-   "time": "2026-11-27T01:55:00+00:00",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQQXhxUTlzbVROVWJBME9JOGtIQnZUczNMMXdBTUV0QlByWWRCWThyeXlfcDA0T2MyaHlVbFlFSW0wbkpjbGd1WXVjQkZQaDNuZFM1VFkxaU9fN2lXUGtwa0xmQ0xHZHVaYko0M3FfVmdmd0l1LUpJOVhrNF9vTzk2OUJ0bVB4MU9JNnFCWFdESncyd0NBbHJodGpyUlRLNXRRRjhDYXJTRQ?oc=5",
+   "time": "2026-11-27T23:26:36+00:00",
    "related": [],
    "tone": "neutral",
    "topics": []
   },
   {
-   "headline": "Hamas weighs response after Israel kills 10 people in Gaza - Reuters",
+   "headline": "EXCLUSIVE: Hackers breach US Air Force flagship Cloud One computing platform - Reuters",
    "source": "Reuters",
-   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNNzFiM29KUVhvZHZUYTV1SWtlLXNYbXg3ZzRodFVmanZkNzJsczZ4UldfRkNkSW1fVDhMaTFYOW9ETUxXaXFKcktCTThoYnBYS21mVjQxYkNWM19MR1h0WHNSdjlGenRTNkExU2RKU0ZKNUhCRWR0OVU2VmFqTUJHeE5QMVNybDE4Qk1WTmp5VGgyWDV0NjhaM3h4Ulp1bWZDUThnSlI0TFMwMnQzNk5KQnZXVTRCUUxvc2FLbmlDYVREeHpwOUpV?oc=5",
-   "time": "2026-11-26T20:56:54+00:00",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPQnhWb2oyc2Qta3k0bUhwbGZTcWZMREZ0VU41eVNZWDJZTDlBcmMxZzFrLXlmVGJpUHBRbVdBRlNoQU9lWUlIcVpMcXQwWWpyYVJ2eDJQa1ZvNFU5MUFHLWdpQW1BVloyUW5lTUlVSlFpLXJwVHNLMl9fQnBFTTNnemY4Q0JiUkN3SXFndG1pX1l1TmdySFJDOHJlWC1fMnE3cjlaVFB5M1hWbU0?oc=5",
+   "time": "2026-11-27T20:56:01+00:00",
    "related": [],
    "tone": "neutral",
    "topics": []
   },
   {
-   "headline": "Attack on Saudi Aramco's Jazan refinery kills worker, halts some operations - Reuters",
+   "headline": "US disables ship trying to leave Iran, as Tehran vows to confront blockade - Reuters",
    "source": "Reuters",
-   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxORnNINWJlUzU0bDVSQ1Z5TWhtZTl1dzVxa01lbWhiMTg0bjBKZzQtbld6RmpIQ3NOSkctT29wTmdmR3VCcHpMbzdBQUdQSU0wVWItQU1COHhCS1BzYnpoOTJsRzl2TWp0aVNNZWVpZVFhS2cwWXVtNnA0bzRfUXNTRTJRTEVHem5BY2V2SURxZG9Vb3VkT3FNa1RuR3RfZWJQUE15WTdGaVFudnJaeVJIdVhXdE9PcWFuY2c?oc=5",
-   "time": "2026-11-26T20:56:28+00:00",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPbzhtZElCdnJJN0hCYkdsQ1lTWHc5UDRtNGE4cF9sWE14dlpacmk2blU5cXJMTHp0MGNaMElaQzdSem91dXNpNVRtd1k4ekZza09jVEpubTh3cjlpbE9CNWdMSU1seV9vNDFEeGQ1aDZBY1J1R0JoNVdlcjJaQnlWcU5Ib3ZISHVmNHA4eklQclI2WDIzR0VtNVp0NEJjaDZfcTlKNHRNbW54bGF2TExrR1NaSFJvLUxRcnc?oc=5",
+   "time": "2026-11-27T20:06:57+00:00",
    "related": [],
    "tone": "neutral",
    "topics": []
   },
   {
-   "headline": "Two Italians killed in attack on Kuwait site, Iran denies involvement - Reuters",
-   "source": "Reuters",
-   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPeE9DZXQ0VUMxV052eWlmWWlKM3R0LTFiMS1ITm93Ty1NOWpta1ZVNU5MeWVVMHRlcmdXd0NpZmxJeGlGZEhCeklaaEs2VWlSWnR0RVRLUHhCNm9MeFNTMmNUZFEyWWdoUVVBWUZTcVc0LVNFY0gxN050ZHNtS3psSVRHQWtBVEM5N3dPYVl6T1Flb0tBb1BlUGVxQ3ZaNURWVU9vTHYtTGxFRDJSQVhaMU1Tbw?oc=5",
-   "time": "2026-11-26T18:54:12+00:00",
-   "related": [],
-   "tone": "neutral",
-   "topics": []
-  },
-  {
-   "headline": "Settlers smash foundations of Palestinian family's homes in West Bank - Reuters",
-   "source": "Reuters",
-   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPb1JfSF9vcWp6cVBxNTNjV2NnZkd4aUN5ektmYU4wSF9Qa18weEFlbGhTZlRtTEhuY1haWW1pTk4wZjExSHo3Rk5jY1VHd09FblJPSHJfazNMenFsYWRlVDdYYjJobXd2TnRFRlYwWXBvaWlLWjQyWTFIZnF0VWNVSHYzQmxMRVVxYUlad21JWXBseHJ3VUlqOXVFRk5EQXpHODZoUExmMWFVVW5HT1Nrd1ZCMklXVHc?oc=5",
-   "time": "2026-11-26T18:29:43+00:00",
-   "related": [],
-   "tone": "neutral",
-   "topics": []
-  },
-  {
-   "headline": "Trump demands probe into \u2018record setting error\u2019 after third-quarter GDP data gets massive revision higher",
+   "headline": "Jensen Huang's return did little to ease AI jitters. We used the weakness to buy",
    "source": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/26/trump-gdp-revision-investigation.html",
-   "time": "2026-11-26T17:57:32+00:00",
+   "url": "https://www.cnbc.com/investingclub/2026/11/27/jensen-huangs-return-did-little-to-ease-ai-jitters-we-bought-on-weakness.html",
+   "time": "2026-11-27T18:46:20+00:00",
    "related": [],
-   "tone": "neutral",
+   "tone": "positive",
    "topics": [
-    "Earnings"
+    "AI"
    ]
   },
   {
-   "headline": "Turkish elections to be held in 2028, ruling alliance agrees on Erdogan candidacy, vice president says - Reuters",
+   "headline": "Britain's FTSE 100 posts biggest weekly gain in eight months as miners, banks rally - Reuters",
    "source": "Reuters",
-   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPOWczelB1MldEZ2RSX1luOHBST0ZrMGtNMl81TTgwVE5fQTZtNnJxeElKMmlzSmdnLVpVTDRfVjluMVZSa09QaTluWGk5X2VTcEw2aFlPcmx1VmlsVHd5eUFMaWM4Nm5EX29OYlhlMzZyZW9fMmcxLUxkZ2kycGFiLWtQbU1jSVBsbWRwM3p0RDFEUU8yXzVOOGM5T3pRTWx0ZDZkTmptem0teU1WVjZCdk5lcDFpZ2F2UU1mbTVHOHJqRWVnRUFYdmR3?oc=5",
-   "time": "2026-11-26T17:41:43+00:00",
+   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNSFRCSGhuNWlueUFObDgwZDBGenpUODhVdkhrQWtra2lxOWdNVldJZXNLVnRQNldMVTdaTmtRNUNjM3hndjJRYmtUNXE5c2p1TmMyaVVZY1M1a2dSX1Bfbm00ck8zamF0SkVUc0p2ZkM0Z0pfVVIyU0VzeU5vYklZRkxDUnBxZ3cwbktSQmROQVVacnlWekpNY3hLS2IyampaZEJPMFJ0X2dIQQ?oc=5",
+   "time": "2026-11-27T17:16:14+00:00",
+   "related": [],
+   "tone": "positive",
+   "topics": []
+  },
+  {
+   "headline": "At least eight found dead on migrant boat off Spain's Canary Islands - Reuters",
+   "source": "Reuters",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNOFg3b1hQNEFySWI3WEZRY21RRGFIQndWTWhVZkdpYUlVczFmR2hiSnZaemxZTzFqYU1uSThFbEVMSkgyVFR1SXE3UEpBd09jOWNzcW9IaXl0TXZIS3k2VXlEUDBVcEJjc25UOHBEXzhJcFBCX2YtdXpqLVVMN1lmVFliYWJ0QnY0YUhOOWJGblFRaXlmbFFpMUZ0aWdvRHRWQ0E4RFd3?oc=5",
+   "time": "2026-11-27T16:43:46+00:00",
    "related": [],
    "tone": "neutral",
    "topics": []
   },
   {
-   "headline": "UK's Imperial Brands says Altria weighs possible offer - Reuters",
-   "source": "Reuters",
-   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNWHV2aHhOY1ZmZ2N0bFZXLUxSSHNlaGtRZnVLWlJwNHY0RlB5b2VFLThsUkhwa3pEY29SMVB2X1kzT19XVlNkamxnQkJlbHREd0F5cmo1VTRvU3ZzTUlUWnBpUzVkejg4V1NkVTA3UDlsTlhucEp3OWxfR3M5NFJwYTdSRS1fbVJGX3poWmlzNlp4VWtiYnVBWng1amxrclE?oc=5",
-   "time": "2026-11-26T17:37:29+00:00",
+   "headline": "'The Traitors' ended with a $246,300 prize\u2014here's who won and what they told us about spending it",
+   "source": "CNBC",
+   "url": "https://www.cnbc.com/make-it/2026/11/27/the-traitors-ends-with-246300-prize-heres-how-much-goes-to-taxes.html",
+   "time": "2026-11-27T15:49:29+00:00",
    "related": [],
    "tone": "neutral",
    "topics": []
   },
   {
-   "headline": "Iraq closes two border crossings in Kurdistan region with Syria and Iran - Reuters",
-   "source": "Reuters",
-   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPLXo4cXNsVjIzOVYyWnIxR1JOUjY5UUkzU0xCSXc2ampKcnhKajJ2VjdjWWdzSkY3QlV5Z0xNQkd1aUtKUWh6d19mMXlsTEc5RTk3T0NvbkJyM2Y4VWZ5bW9sRFhUX2Q4aGx5dGhLLXVLb0VDWDFaSGQ0eGZaZVRacTVlWkx1eVYwZEwwUWNSZEFpVGlQbVA5dkRGWXVmeHlpYzE5VFB3NVo5TzBmWHk1YXZjZmN2XzZjdS0w?oc=5",
-   "time": "2026-11-26T17:32:41+00:00",
-   "related": [],
-   "tone": "neutral",
-   "topics": []
-  },
-  {
-   "headline": "Russia arrests deputy aerospace commander in reported corruption case - Reuters",
-   "source": "Reuters",
-   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNQzFOeDFjM0VPTXBIZkxlelN0ZFAtQ25fOUZkTVVheGM0cURoX1RqVXUzTGttUDlLTmhuczVlelh1eGJUYkVWQllDQ1ZzTlB3OUdQMjloczZsRGR4WGwzbF9XWURoSk9Tb2FybGNlbExBc243elBHTGxtNnpacDR3Y1pSaDctcFZqdUs5UkJiZ1R1Q09lTWxkUmN2TnNSZUdaQlpPNUl1N0tZVDJGd0xOT0lTU0tGUzA?oc=5",
-   "time": "2026-11-26T16:29:52+00:00",
-   "related": [],
-   "tone": "neutral",
-   "topics": []
-  },
-  {
-   "headline": "Israel's Eisenkot reaches deal with left-wing faction as coalition talks gain steam - Reuters",
-   "source": "Reuters",
-   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOQnltOGlBZG16OU1LUGlBS25WVUFhN2VnM0NhWHpzTlVscC1iOE5kdFZnaGhBbmNOdm80b05IQWttZm9MV0liVmZzVE56bXVxSHJXYXBmMktWSVQwZ2hfNmVGdWVJQmp5RkRtS1dXR0wwT0pXX1dFdUM5dDJrUWNTNHVsYjRNWXBWcmx3RTlqQ0ZQNEJWWFVxalA1Z0tkRExSbGJVOWpWX1pMY25aZHB3VnlvTWF0QUNvaElpM0FORVM5a1ZPa05mWDBXQQ?oc=5",
-   "time": "2026-11-26T16:16:29+00:00",
+   "headline": "Top 10 things to watch in the stock market on Black Friday",
+   "source": "CNBC",
+   "url": "https://www.cnbc.com/investingclub/2026/11/27/top-10-things-to-watch-in-the-stock-market-on-black-friday.html",
+   "time": "2026-11-27T14:28:36+00:00",
    "related": [],
    "tone": "positive",
    "topics": [
@@ -386,82 +359,95 @@
    ]
   },
   {
-   "headline": "Argentina's Senate poised to suspend primaries, boosting Milei's re-election bid - Reuters",
+   "headline": "Airline Norse Atlantic's Norwegian operating unit declares bankruptcy - Reuters",
    "source": "Reuters",
-   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOME12Z2hWeXJDdjhYQll0TW9vYWFaMzgwdWdBQ05BR3k4ckdrdFo3SkdfOXZrOGVXU1VUOTNtYXRXWEJBYlExUllERjdYRGxqR3lCelZyQTJxd0o2Q1VacWw0Sk5QajJWbGlDaDV1Y2hjWDE4dEVjNFpSQXdhQWg4MmFydGdDMEhmQjI2TjNiMUliZ1hBX1lXaDBoRlN0RHoxeUpxV3JuMkU2TmFncHhfWXdyOFNaUlVrUC1NZnlSS0NoRFE?oc=5",
-   "time": "2026-11-26T16:11:15+00:00",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOZjF6SXBzRmpCeHczaU9VZnNGczNjcWtlMXNCMUFrTUxfbUViN3cxUXpPbFU0YVRTQzU0aEY5MGdLY1hnU2I1R21jd2tYNnIyLVVLeEtoSEY2WjZKNTE0QkdLWWFzcmkySGFYUWE4Vmh3OVpzLWJ3V25LX18zSUJ4TS1TcExrVFFoUUVvOS13NmF1dUZJWVo1S2hLRlZaNmMzTWh1dDFsTHpXUzlzN2lWQ01sc1VVR0hOUzlZSTJ3?oc=5",
+   "time": "2026-11-27T13:37:31+00:00",
    "related": [],
    "tone": "neutral",
    "topics": []
   },
   {
-   "headline": "Trump demands probe of GDP data released before midterms - Reuters",
+   "headline": "India's Adani Group targets capex of nearly $24 billion in FY27, CFO Singh says - Reuters",
    "source": "Reuters",
-   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPdjAtVm85ZE55RGw0MXhaM3NVV1NlaHdlazNjODRQQjRPOGh2eDQ5aWYzcmxNSHpVWHNacEhhMDFaRDZ3YWIxalJzY3JCTXdjLVE4RXpmbktlZXNZTUc3RlE0LVhtTlo5Rl8xMm9nOXVPZmZ1eEd2XzJjcXQxX2otajdiUHN6djBScGpldmJvUXBIaG9UeUJxeW5kSWtnTTQ?oc=5",
-   "time": "2026-11-26T16:04:27+00:00",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPOHlTQnpYYzNEZjVsMG9Yb3ViN2hTZEFtNmh0M1cwSktEaTRRdUpJY0owNkZoN1VZeUY0WUdGLUU0dXRCRnJ6NzExTHk3MEpRbUhKQ0Z1QkdocDVYUnowY0JFMFZ3VzZJLUVzSUlYUjMtaGNPelNYVVdvV2xKVFExNG10NXRJbHRKaWpBUVNGRm1fekVseXVqXzlsRUNoZkZqU2hQTGNwQXlEZFJCMHFiSm51MzAtZnZ0c2c?oc=5",
+   "time": "2026-11-27T13:25:37+00:00",
    "related": [],
-   "tone": "negative",
+   "tone": "neutral",
    "topics": []
   },
   {
-   "headline": "Stocks rally, Europe sizes up next ECB chief - Reuters",
+   "headline": "Trump backs Iraqi leader's efforts to assert more state authority - Reuters",
    "source": "Reuters",
-   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPUWRTQ2N0czgwTVhPdVhvZDUzeDNDRUJ6cFd0MWx1N05aSTJHaUlOdTQ5X2xieEVueHJ3VTRrb0ppNEtzbFVBRm1fU3VvV0xpMWVlUWg3c0NvWXJxS2ZabkwwejhwenhCVmhYRUdweUwwdHhTTWd1bTh2QlR1dFpvVDFHVQ?oc=5",
-   "time": "2026-11-26T15:51:24+00:00",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOdE9aRmVNN0dTb3V4aExjamVrY0F0X3hVb3g5ZWZZY1B1bVNzb2wwQkFXdi1ka3d2RFk1M1FDVGdUSXkwLTlRU3p0Q0RsRHM4cUsxcm5JOVFUN1U5bF9hYWtBVzZRYmhSVHEyaW8tZExhLVhfZmhZWHRXZzRTTXlONm9wTjRwNkxfY2MxVjZUUExpTGdqMU1jSDVxNXRNclIxa1hsRXcxTzhycGcxbW9vRDV0czJ4dw?oc=5",
+   "time": "2026-11-27T13:11:44+00:00",
+   "related": [],
+   "tone": "neutral",
+   "topics": []
+  },
+  {
+   "headline": "It\u2019s not just you: Durable goods are getting less reliable, from sputtering cars to glitching smart TVs",
+   "source": "CNBC",
+   "url": "https://www.cnbc.com/make-it/2026/11/27/durable-goods-reliability-cars-appliances-tvs.html",
+   "time": "2026-11-27T13:05:02+00:00",
    "related": [],
    "tone": "positive",
    "topics": []
   },
   {
-   "headline": "Iraqi Kurds protest against Baghdad leader's moves to assert central control - Reuters",
+   "headline": "Global diesel market to run into deficit in second quarter of 2027 - Reuters",
    "source": "Reuters",
-   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOZ2xrakttQVBBRkRuMG9VbFRZaFJxcnIxZE1TV3EzdTFtV0w2anEwMWgxb2VDdzhFazVicDR0cW45TExKWFZlbVAzd05hUEhwVUt6YzBGVXJBOGtFYk5pUjRsVVJJYVNrRjFwSGk2bGdiY0poRXBqNDBFT3QybWZKT0FHUmRSdEZJUU5TWUJNQ205UmlpbFpiajFXTVZ1X3dxMU5NZEwyN2pEa2ZOVWtrcFFfbWcxczcyektCWlRlWnlyZw?oc=5",
-   "time": "2026-11-26T15:21:46+00:00",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNLUh5OURIMC1MRmNIM3pMa2ZMUnBhZjl4TjRVUWl6QTg4Mk9FdXluQWVubzNSOUNMUmROMGdnWGp2Wlp3Y1NxdFdaQ0tubFFoZTVlS3hydlBkcDJUWURvLVZKamppQTlvSm8yYkV0NE5rRlp6TVUtSzNsOUtGYUJtR1pWMl94TjA5UFRta3lPVldBaGtxQm95Wng2UVlwckszVVhaTHFYQ044cjNPQUE?oc=5",
+   "time": "2026-11-27T12:25:44+00:00",
+   "related": [],
+   "tone": "neutral",
+   "topics": [
+    "Earnings"
+   ]
+  },
+  {
+   "headline": "Trump and NATO chief urge Russia to avoid actions that widen Ukraine war - Reuters",
+   "source": "Reuters",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOcVE1ZllSR0xRNHFVUjR0WWJjQXF2MllxbUV3WUQ2Vno2WFFCbzkyODBvWjE1WmtscC1rdkVLdVJXUDhUUXFiMDZQbS01akV2UjhQQUFwMWp2aWdrdm5ZQy11b0tvX3BkSVU1WmdUV2J4N2l0UF9tcHVqRzBuWkxhRUVsU1FtMTl1aEhRWkx3RFI2VDlraEhKemFOV0ZEX0todDFpTTBsTndhZk0zclNaWk5lNA?oc=5",
+   "time": "2026-11-27T11:13:46+00:00",
    "related": [],
    "tone": "neutral",
    "topics": []
   },
   {
-   "headline": "Spain's De Cos set to be nominated by EU countries as next head of ECB - Reuters",
+   "headline": "Inflation has shoppers hunting for value. That bodes well for Black Friday",
+   "source": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/27/black-friday-2026-inflation-value-deals.html",
+   "time": "2026-11-27T11:00:01+00:00",
+   "related": [],
+   "tone": "neutral",
+   "topics": [
+    "Fed and rates"
+   ]
+  },
+  {
+   "headline": "FACTBOX Spain election: what the main parties are proposing - Reuters",
    "source": "Reuters",
-   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOOV8wZkxRVTY5U0ZQeVZwSGtCMVZJTjV2d2t5TlhsSVoxQmpLRXI4OTV1R0QwQkV1QmZma3BDN0lrOEJTNGFVeloyeE5HbnhmWDZfR1VrbzN5TzZrck5WTTlKNTBaeFhVbDd4RldhY0hZMnFsczlsTURLY0FpWWgzeE5YVVc2NUZqMy1KbldQVDJfcUtsVEhINHF2emJ5SEFrMXozWUdTM3BFQQ?oc=5",
-   "time": "2026-11-26T14:57:22+00:00",
+   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNQWRyM0NQRDdFNTJsMVZKTzVoMEd3UXpzOWZQYjZSejZXc29xbVA3emVPcC1XV0lSMnRXWWhObmJ6cDJrMTdzV005ZVJlT3Z2UGJLWTBNeDE1T0hsOUtXNkp4T3VtV0VJeE83SkFUTjZlTkxRYUI5NTNPdTVsek5RNWdaSXM0Q3FCM1JRM2x1UlhaSzk0bWxkWFdHdw?oc=5",
+   "time": "2026-11-27T10:59:25+00:00",
    "related": [],
    "tone": "neutral",
    "topics": []
   },
   {
-   "headline": "French actor Gerard Depardieu to face trial for rape, court rules - Reuters",
+   "headline": "Four Jehovah's Witnesses convicted of 'extremism' in Russian-annexed Crimea - Reuters",
    "source": "Reuters",
-   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNWHRHWGdZSTZmMFAtdFFZbVlVOTRTUEdYNDlQQVVVaGdua3JjQk1YRmlEOXhSeXk5a0thWjdtSUt2cWZpTVNkV3dveE9McHRhSWVpdjIxd2FuOW84bkRBTlNGcDJ4S3Z3MFBCd3RyWlBDai1mMXlKMkpFUnVBWmtDWk5tVzhFX2F6bzNuS3lYV0Q2bUtCbjlpMUlUZFJwYlM4eGhwcmdB?oc=5",
-   "time": "2026-11-26T14:38:57+00:00",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPYU5YQVdzaHpXYmVSRG9uaWNkNVB4UTl5blFhczE3aTk1ZXV4N3FDOHE1Y0ludElpV0dyVE54eXR6TjZsR3Mxd2p2RmVwMUhpenBqNl9MVy00djNYd0RHSm04ZEZXQzg5R0JHcWw4bEZUZ0ppRkxwUkxkbDFvY3hUMDZBSzE4Q3RwRTZCdmZvMUZBTThhTklOWVF0TldZZ2hUc29tSXRBQmJPNmJC?oc=5",
+   "time": "2026-11-27T10:22:17+00:00",
    "related": [],
    "tone": "neutral",
    "topics": []
   },
   {
-   "headline": "Two Italian workers killed in Iranian strike in Kuwait, source says - Reuters",
+   "headline": "Former government chief of China's Guangxi sentenced to death with reprieve over graft - Reuters",
    "source": "Reuters",
-   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPZ2hPQWhhdW9HTWxtRndjQkN3aFhQTzhyWV9sQ0NTbHNsRFpINkRjMHhKRGN4QTk1NTJYWU1yVHhmYVJSazJEVGtOdVIzZ2xsNFJFeHF0YXNEbXBqTF94bnBDOEFnMV9JdGRRbWVROFJGRmZISmZWUXhtYTlJTXFFMlBWa2IwdXBfUXY4OENRd2tVeWh0Q1M1OThsMl9kMkVEamJiTjMzdWxwZHRzdlVHYmtwTUI?oc=5",
-   "time": "2026-11-26T14:02:19+00:00",
-   "related": [],
-   "tone": "neutral",
-   "topics": []
-  },
-  {
-   "headline": "Airline Norse Atlantic flags bankruptcy risk as flights suspended - Reuters",
-   "source": "Reuters",
-   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNelVSdGZIMFMxelZ3SVpNZHYyYzRTZWN4S010bExkN0lmVVk5eng2VWp0VUszQXhGVDF5TUFxTDQzSXFuNmxHazV3d1VSR1BWMFRIeFBMQzJDeUM0RG5Cazhya0dpdDA2ZzJDSnd0WGVvVGItS0ttemdLUGhUbUwwbjBWbUk2VktZQUxsa0haX290d21lVFg5Ri1UZ0FkcFo1ZUpnSUNTd1ZudHJWYnQ5T0U4X0w2aExZRXBSOE9ETlEwa2ljRmxF?oc=5",
-   "time": "2026-11-26T13:58:06+00:00",
-   "related": [],
-   "tone": "neutral",
-   "topics": []
-  },
-  {
-   "headline": "China Railway Resources Group plans $600 million investment in Zimbabwe gold mines - Reuters",
-   "source": "Reuters",
-   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOLUpCLVR5YVZ1cFBPeHRtT0pkYUdFZE8yd0loYTFweXZ6ZVhMTlhNczJyRU1Ed0ZTS2JlODFQUVpoTHM4azhmNUtTM0huMTNBWUpTbWgwRFhoZHViZ1Npb2tQbEVGWFZVOUh2Z3ZyN0dYRzI3aU5wOS1mZldycWM4WHJzR2pHQV9QNFF6azNUM1lybEN6Q1N4MHk4ZVpKdkxiaWZ3MUpLZ29uSko5a1ZYdnA3dGVJc2EtXzMxZFhSV04wc2VNS1E?oc=5",
-   "time": "2026-11-26T13:57:50+00:00",
+   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQbXpEaENJRlIwSHl4dEZuT0pwQTVreDduek1JSVNKVTB4UkJFMDZUZFBtQUYtYVlHYVZSdklGNXNsbU1vWHc3cS02NkFGSnlSa3Z4a0dybGlwWHpXYW9TUGwyLTJjSmFNNDIzOE5iRlRCS3JBYUpFcVhxOUQwR1dNem5EZm15akU4YV9uc21tYUVwa0tXRmRkdmFuZ2FmeGlScEd6MTljM0RrSXhpazNJSVV4WVVJRDhXc1l1RHdyUWZpVEdmQkE?oc=5",
+   "time": "2026-11-27T10:01:23+00:00",
    "related": [],
    "tone": "neutral",
    "topics": [
@@ -469,28 +455,52 @@
    ]
   },
   {
-   "headline": "Spain's de Cos to become ECB's next president, FT reports - Reuters",
+   "headline": "Norse Atlantic files for bankruptcy, halts flights as Iran war drives up fuel costs - Reuters",
    "source": "Reuters",
-   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPaWxGUjk3QjBiVW11a0hIVTN4R21ScVdhVXZTY2ZEeU5oRXp6U3VWWHNqblR6MUNJcWVHc0xQSEZwd2l4cDkwNmZ1N0NxbHF3c1g4TlZiZTVKemRnZktkWENldWhOMkN6N0t2MTc0Z0daLUtFOGtXLWlWSTVZa0FUeUNYZjhKdTNnc2lCMVgyc2VtMkNmUzlhaDhDang2Yndad2c?oc=5",
-   "time": "2026-11-26T13:51:46+00:00",
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOUFZ5amdzZG00RTRadGk1NlNDb0JFeTNseGJid3dwNWtNTFBvaVQ1LVdnSUs1Rkk3Uy1tTlNDVVBmMkRkV1QxU3lGcHR2ZzU0bG9PMlM4OXphZHpVVVBXNS14WnRNX2xsWEZrSXV4TjRHUlZFWUlEYldEY1NFZlRqa2xjNUE2T0l5cWJ3MTU4aGo3Qk91WVcwdHdtZWdkTEZ2bWdnUGxrVHdOYmZ4ZDVMOGtWc2U5S2ZuM1FjRQ?oc=5",
+   "time": "2026-11-27T07:39:00+00:00",
    "related": [],
    "tone": "neutral",
    "topics": []
   },
   {
-   "headline": "Iran's supreme leader urges Guards-linked Basij volunteers to broaden social reach - Reuters",
+   "headline": "Indian firms utilising only 20%-30% of free trade agreement benefits, RBI governor says - Reuters",
    "source": "Reuters",
-   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQYmt1bHZnbVJoU3dJN3o2VEQ1c1c2WXRPeTRxRVFRT0I5bHc5MEJweVVlZ1J1aXNVd0NCZ0piWlg1OU14dVJiR3FyZTVicHoxc3FIS2tZbXdvU3gxLXBQRi1mOGhmaEZGUkV4elpkWk94MVdtVDBtTngyT0FaSm1OQ1BZV0dNNnBqTWNZcTR0U1FfU3pLQlNKN2NYWkJFWlFIRmdlOURCWTlaWHN6ZEpYTXhuelJiSUstVDQ4TQ?oc=5",
-   "time": "2026-11-26T13:47:44+00:00",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPdFhhQzVlSnZ0TUtmdUY5WUhtWHd3R1kyTXpLZTk2XzFINUFmYWlKakpFcmZsS21GNEdKd0VUMTVReHZmR0xnM2dxRjk3aXA3U0lXX3F1cG55REhGMGd2NVJzUzFkNDBKQmJOTENiWlJ1S2FxMFE2QjZhSEpyeWhKay1WeUNGQnB3NFhQUy1qdjJ4dmNqWkNjbUVqUWxsSUVtSTJrWEw0Y0hzQkxFYUxTU05FNUd3NjAtNENwVUFvOVZidw?oc=5",
+   "time": "2026-11-27T07:18:00+00:00",
    "related": [],
    "tone": "neutral",
-   "topics": []
+   "topics": [
+    "Trade"
+   ]
   },
   {
-   "headline": "OPEC+ oil capacity disputes persist ahead of Sunday meeting on 2027 quotas, sources say - Reuters",
+   "headline": "China cabinet calls for greater role by 'national team' investors to steady sinking markets - Reuters",
    "source": "Reuters",
-   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPRWNNN09tM1phcUhhRlFRRTlHaW0yYU5fQUxJUVFEZjl5cEdhaHRnOGNwRkl6QUZTWEhNeU16Vnk5bHhNQ3JSd0FXNDlHZkdDVTV4ZkVsbUpQUFV4VWdobEhfdlpHOUt4SEJadFRpNHlYZTZRZFdBaEZKYnUyTHJ0eHlyWjE1a1FjenhuYWtoZHJJSHVPYVhjSlprNF81NkNiMlpQNUpBcy1kcHd3eEFaRjZHczhHV3RIWlJRaHZOQlBXUQ?oc=5",
-   "time": "2026-11-26T13:02:42+00:00",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQSFgzSVB4VzlUMGw5WEx0UjZrWkFZc2tnRVdlaFF4UWNUQW5IRWwtSjB6aXBENzl1dHhFOGpySE1Kb0xac3g3YU1RMDVPVGRHc2FPcUFaSmJNYWRBbm1qMlo0V3BpQS0teFNJMnAtYy1RQjlZemlfV0FVZW9tZ05MQlY4cGdYd3g5Wmp2cXhsdjhOT2ZrMEYzaWNmSld6WEpvS29VWW4zVm0?oc=5",
+   "time": "2026-11-27T06:32:00+00:00",
+   "related": [],
+   "tone": "neutral",
+   "topics": [
+    "Trade"
+   ]
+  },
+  {
+   "headline": "How Sanofi's new CEO struck a rapid $41 billion deal for Insmed - Reuters",
+   "source": "Reuters",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxObU1CTWI1cG1XTE9pbkN0cEl4NGFSYVFkalA1bVRsZ2xBVDhwa1lSbFBJUEJubXdSVnlKOTE5UVB3NHhFREZGUnlIMk1pU1RCdHUwWXhGdDJka2cxVEUyaVNPN3dmV2VudGlxWTJpM2NNTmhRNmJiNjVGNkpsZzZTbWFZNlpWc19sYTNNc1VDN1NRMzJESGlYZWVpeU5fdFZMTC1DZWdzZzIzQS1BTFJkVG5sOA?oc=5",
+   "time": "2026-11-27T06:03:00+00:00",
+   "related": [],
+   "tone": "neutral",
+   "topics": [
+    "Deals"
+   ]
+  },
+  {
+   "headline": "EXCLUSIVE: US pushed Venezuela, Iraq to consider leaving OPEC, sources say - Reuters",
+   "source": "Reuters",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNeVZ6VDRqcUU2ZDJ1UWdyUmYwNXRPMHAzR0pjRk8zLTJqYlF6YTVFV1Q5V3ZKV1IzZ0NDN2tKdkNxVmUtSmxpNnBNVmkzRWp5NkZ4SFdkaXZ6Zy1hUlhIUkdOY3ozaWVCLVI3M1FaRE9CQVZacHZ0c0tGM3AtUlFWaVR1Tnp4T084eVFjWDIxbVJQa1F0Z1RQRUdkU0YzdnZWMWJWNHRMT0JiQ1NHeDJF?oc=5",
+   "time": "2026-11-27T06:02:00+00:00",
    "related": [],
    "tone": "neutral",
    "topics": [
@@ -498,27 +508,30 @@
    ]
   },
   {
-   "headline": "Planes, trains and automobiles: The best ways to beat travel fatigue\u2014so you can come home feeling rested and fulfilled",
-   "source": "CNBC",
-   "url": "https://www.cnbc.com/make-it/2026/11/26/travel-fatigue-holiday-tips.html",
-   "time": "2026-11-26T13:00:01+00:00",
-   "related": [],
-   "tone": "positive",
-   "topics": []
-  },
-  {
-   "headline": "Airlines strained by Iran-war fuel price shock - Reuters",
+   "headline": "Erdogan completes Turkey's ratification of Mecca defence pact - Reuters",
    "source": "Reuters",
-   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOM0RXOWhRODZRb01BelZsb3BrVUVOeFdqejJtT18xNEhDTm1CNW43RmRHd1RtdWc4UDJVTnBYV3lVMktqV2Q0RTktYW5JWWxjMUI3TEdWWFUtMVZ6SWFrWGx6amJ6bFMzLTh2OVlKMHM5OFdPSjB4UUFVdFVZLW1DaTRJNHdhZWV0ZHAwQnBwMEVobDdhbW9PLTg4OVVFM3V4?oc=5",
-   "time": "2026-11-26T12:50:13+00:00",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPVmJEdmR5Wl9uZTZKS1R2ckJXekhkX1AwSVZpSHhkODcweDNmTVRva2JDdjRWcjNvYk4yeXNkQWw3ZTVnMUpWUTBjYXNWOTVCY2Y1emVTdGFjazhoR1ltaXF6WTNvMEVqSUdaNTI3VzU4U3dMNkROYVlDMTR5NHhpdGhuZjl4VnZGTzFTNHRXMDdnSXVmdXhpODl6YjVabXVoa0NlMVFsOW94OUw1clJ2UUpR?oc=5",
+   "time": "2026-11-27T05:22:00+00:00",
    "related": [],
    "tone": "neutral",
    "topics": []
+  },
+  {
+   "headline": "India-US trade deal is nearing completion, minister says - Reuters",
+   "source": "Reuters",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNMkR3N0t3ZmV1SDk5LWNGa3hCcXVleWpPVFpORzVUZnUtYUJoUXQ2eFEzN3ZrQjcxMHhCaXk0NzY4M2NkSFNic1Q2aGJYZlZoYnFlSG5iU0NQX1dUNWZzci1xTU10bm5UbGRYSWkzdno1c3dDRlpZWjVxNjRaWkF5ZzlJdGxsUlJpWUFTbDZCN0d4bFlqN3NNOG4xdy1zZy05TmxNZTlR?oc=5",
+   "time": "2026-11-27T05:21:00+00:00",
+   "related": [],
+   "tone": "neutral",
+   "topics": [
+    "Trade",
+    "Deals"
+   ]
   }
  ],
  "errors": [],
- "generated_at": "2026-11-27T03:46:24+00:00",
- "brief": "Markets: S&P 500 -0.29%, Nasdaq 100 -0.65%, Dow 30 +0.31%, Russell 2000 +0.65%. Best sector: Materials +2.07%. Worst: Technology -0.83%. Biggest watchlist move: NVDA -3.91%. Headline tone: 3 positive, 1 negative, 21 neutral.",
+ "generated_at": "2026-11-28T03:30:35+00:00",
+ "brief": "Markets: S&P 500 +1.62%, Nasdaq 100 +2.69%, Dow 30 +1.26%, Russell 2000 +1.83%. Best sector: Technology +2.80%. Worst: Health Care +0.28%. Biggest watchlist move: TSLA +5.22%. Headline tone: 4 positive, 0 negative, 21 neutral.",
  "ai_summary": null,
  "webhooks_sent": []
 }
